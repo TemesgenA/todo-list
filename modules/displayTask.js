@@ -8,7 +8,7 @@ export default function displayList() {
   const tasklists = toDoListData();
   for (let items = 0; items < tasklists.length; items += 1) {
     const listPlaceholder = document.querySelector('.task-lister');
-    listPlaceholder.innerHTML += `
+    listPlaceholder.insertAdjacentHTML += `
                   <li class="task-items">
                     <div class="task-inner-box"  id="${tasklists[items].index}">
                       <div class="task-items-item">
